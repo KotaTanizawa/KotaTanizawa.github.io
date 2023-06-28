@@ -14,9 +14,9 @@
     background-color: brown;
     
 }
-div {
+.lottery {
     margin: 10px auto;
-    padding: 100px ;
+    padding: 80px ;
     text-align: center;
     
 
@@ -63,3 +63,12 @@ li {
     margin: 10px 30px;
     text-align: center;
 }
+.checkbox {
+    float: right;
+}
+
+.rateBox {
+    text-align: center;
+}
+
+
