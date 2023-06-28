@@ -66,7 +66,7 @@ function insertComma (value) {
   let valueStr = String(value);
   let result = "";
   for (let i = 0; i <valueStr.length ; i++) {
-    if (i % 3 === 0 & i !== 0) {
+    if (i % 3 === 0 & i !== 0 & i !== valueStr.length) {
       result = "," + result;
     } 
     result = valueStr[valueStr.length - i - 1] + result
