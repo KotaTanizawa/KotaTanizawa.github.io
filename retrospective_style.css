@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: turquoise;
+    margin: 0;
+    padding: 0;
+}
+
+.contents {
+    text-align: left;
+    width: 1000px;
+    margin: 150px auto;
+    font-size: 30px;
+}
+
+.catalog {
+    font-size: 40px;
+    margin: 40px 0 0 0;
+}
+
+span {
+    color: red;
+    font-size: 30px;
+}
+.sentence {
+    padding: 0 30px;
+    margin: 0;
+}
+
+.message {
+    font-size: 50px;
+}
