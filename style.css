@@ -71,4 +71,11 @@ li {
     text-align: center;
 }
 
+a {
+    font-size: 30px;
+}
 
+.link {
+    margin: 50px;
+    text-align: right;
+}
