@@ -18,15 +18,23 @@ const lottery = {
   lose : {tickeNumber:213355152,award:"はずれ",value:0,color:"black"}
 }
 
+/**
+ * 
+ * @param {boolean} cheat cheat使うか
+ * @returns {number} くじの残り枚数までのランダムな数値を返す。cheatがtrueなら1を返す
+ */
 function randum(cheat) {
   if (cheat === false){
     return Math.floor(Math.random()*total);
   }else{
-    return Math.floor(Math.random()*1);
+    return 1
   }
   
 }
-
+/**
+ * 
+ * @returns くじの結果を返す
+ */
 function drawLottery() {
   const number = randum(checkBox.checked);
   total--;
@@ -40,6 +48,11 @@ function drawLottery() {
   }
 }
 
+/**
+ * 
+ * @param {*} value 金額 
+ * @returns {string} 金額を1000単位で(,)を付けて文字列として出力する。
+ */
 function insertComma (value) {
   let valueStr = String(value);
   let result = "";
@@ -48,17 +61,19 @@ function insertComma (value) {
       if (valueStr[0] === "-" & valueStr.length-1 !== i | valueStr[0] !== "-"){
         result = "," + result;
       }
-       
     } 
     result = valueStr[valueStr.length - i - 1] + result
   }
   return result
 }
 
+/**
+ * 抽選結果を画面に出力する
+ */
 function buyLottery() {
+  const ticket = lottery[drawLottery()];
   purchaseTicket ++;
   purchaseNumber.innerText = purchaseTicket + "枚 " + insertComma(purchaseTicket * 300) + "円";
-  const ticket = lottery[drawLottery()];
   result.innerText = ticket.award;
   result.style.color = ticket.color;
   earningsTotalAmount = earningsTotalAmount + ticket.value;
