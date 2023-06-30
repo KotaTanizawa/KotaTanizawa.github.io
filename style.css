@@ -79,3 +79,41 @@ a {
     margin: 50px;
     text-align: right;
 }
+
+/* バナー本体 */
+.news-banner {
+    display: block;
+    height: 60px;
+    width: 100%;
+    background-color:aquamarine;
+    overflow: hidden;
+}
+
+
+/* バナー内コンテンツ */
+.news-banner__content {
+    display: inline-block;
+    color: black;
+    line-height: 30px;
+    padding-left: 100%;
+    white-space: nowrap;
+    font-size: 30px;
+    animation: animate-banner 20s linear infinite;
+}
+.news-banner__content p {
+    margin: 15px 0;
+}
+/* バナー内の要素をすべて選択 */
+.news-banner__content > * {
+    display: inline-block;
+}
+
+/* 横にスクロールさせるアニメーション */
+@keyframes animate-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
