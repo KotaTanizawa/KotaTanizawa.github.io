@@ -111,9 +111,3 @@ const checkBox = document.getElementById("checkbox");
 
 
 buyButton.addEventListener("click",buyLottery);
-// buyButton.addEventListener("click", () => {
-//   button.innerHTML = `<div class="loading"></div>`;
-//   setTimeout(() => {
-//     button.innerText = "送信済み"
-//   }, 10000);
-// });
