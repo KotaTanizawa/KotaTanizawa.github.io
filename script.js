@@ -74,7 +74,7 @@ function buyLottery() {
   const ticket = lottery[drawLottery()];
   result.innerHTML =  `<div class="loading"></div>`;
   result.style.color = "white";
-  buyButton.innerText = "購入";
+  buyButton.innerText = "購入中";
   buyButton.style.color = "white";
   setTimeout(() => {
     purchaseTicket ++;
