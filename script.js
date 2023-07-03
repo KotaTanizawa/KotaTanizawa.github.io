@@ -86,9 +86,9 @@ function buyLottery() {
     incomeAmount = earningsTotalAmount - (purchaseTicket * 300);
     revenue.innerText = insertComma(incomeAmount) + "円";
     if (incomeAmount > 0) {
-      finalAccount.style.backgroundColor = "red";
-    } else {
       finalAccount.style.backgroundColor = "black";
+    } else {
+      finalAccount.style.backgroundColor = "red";
     }
     buyButton.innerText = "1枚300円";
     buyButton.style.color = "black"
